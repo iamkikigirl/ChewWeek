@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChewWeek: dinner, delivered (2126)</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#2b2b2b;--mute:#6b6b6b;--card:#f7f5f0;--line:#e6e2d9;--tom:#c85f00;--rst:#a8693f;--blu:#4c3fd1;--sun:#f3ece0;--mint:#2bb58a;--hero:#fbf3e6;--herot:#2b2b2b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1c1c;--ink:#f2f2f2;--mute:#b0b0b0;--card:#262626;--line:#3a3a3a;--hero:#2b241a;--herot:#f2f2f2;--sun:#33302a;--tom:#ff9f3a}}
+:root[data-theme="dark"]{--bg:#1c1c1c;--ink:#f2f2f2;--mute:#b0b0b0;--card:#262626;--line:#3a3a3a;--hero:#2b241a;--herot:#f2f2f2;--sun:#33302a;--tom:#ff9f3a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Nunito Sans",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:2px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav{display:flex;align-items:center;gap:22px;height:60px}
+.logo{font:800 24px "Nunito Sans",system-ui,sans-serif;text-decoration:none;color:var(--tom)}
+nav .sp{flex:1}nav a.l{text-decoration:none;font-weight:600}
+.btn{border:0;border-radius:8px;background:var(--tom);color:#fff;font:700 16px "Nunito Sans",system-ui,sans-serif;padding:12px 22px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.y{background:#2b2b2b;color:#fff}.btn.o{background:transparent;color:inherit;border:2px solid currentColor}
+.hero{background:var(--hero);color:var(--herot);padding:64px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:800}
+.hero p{font-size:20px;max-width:34ch;margin:18px 0 26px}
+.badge{display:inline-block;background:var(--tom);color:#fff;font-weight:700;padding:6px 14px;border-radius:99px;margin-bottom:16px;font-size:15px}
+.gum{position:relative;height:300px}
+.gum i{position:absolute;border-radius:50%;display:block}
+.sec{padding:64px 0}.sec h2{font-size:clamp(32px,5vw,48px);font-weight:800}
+.sub{color:var(--mute);margin:8px 0 24px;max-width:56ch}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.tab{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:8px 18px;font:600 15px "Nunito Sans",system-ui,sans-serif;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--tom);border-color:var(--tom);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.m{background:var(--card);border:2px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.art{background:var(--card);height:150px;display:flex;align-items:center;justify-content:center;gap:10px}
+.art b{width:58px;height:58px;border-radius:50%;display:block;box-shadow:inset -6px -6px 0 rgba(0,0,0,.14)}
+.art b:nth-child(2){width:74px;height:74px}
+.mb{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.mb h3{font-size:22px}.mb .c{color:var(--mute);font-size:15px}
+.tag{align-self:flex-start;font-size:13px;font-weight:700;padding:2px 10px;border-radius:6px;background:var(--sun);color:var(--ink)}
+.mb .f{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px}
+select.dsel{width:100%;padding:10px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;margin-top:8px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.st{border-radius:12px;padding:26px;background:var(--bg);border:1px solid var(--line);color:var(--ink)}
+.st .n{color:var(--tom);font:800 54px "Nunito Sans",system-ui,sans-serif;opacity:.9}
+.st h3{font-size:24px;margin:6px 0 8px}
+.price{background:var(--sun);color:var(--ink)}
+.price .wrap{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:center}
+.price .p{display:flex;gap:26px;flex-wrap:wrap}.price .p div{font:800 34px "Nunito Sans",system-ui,sans-serif}.price .p small{display:block;font:400 15px "Nunito Sans",system-ui,sans-serif}
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.r{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:20px}
+.r h3{font-size:19px;margin-bottom:8px}.r p{margin:0 0 10px}.r span{color:var(--mute);font-size:15px}
+details{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}details p{margin:10px 0 0;color:var(--mute)}
+footer{background:#2b2b2b;color:#e6e2d9;padding:36px 0;font-size:15px}
+#fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30}
+.ov{position:fixed;inset:0;background:rgba(10,8,30,.6);z-index:40;display:none;align-items:flex-end;justify-content:center}
+.ov.on{display:flex}
+.pane{background:var(--bg);color:var(--ink);width:100%;max-width:480px;max-height:92vh;overflow:auto;border-radius:26px 26px 0 0;padding:24px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+.row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:2px solid var(--line)}
+.live{text-align:center}.cn{font:800 44px "Nunito Sans",system-ui,sans-serif;margin-top:6px}
+.orb{width:190px;height:190px;border-radius:50%;margin:14px auto;border:0;color:#fff;font:800 56px "Nunito Sans",system-ui,sans-serif;cursor:pointer;transition:transform .08s}
+.orb:active{transform:scale(.94)}
+.bar{height:14px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0}.bar i{display:block;height:100%;width:0;transition:width .15s}
+.lb{display:flex;justify-content:space-between;color:var(--mute);font-size:14px}
+.stop{display:none;margin-top:12px;padding:12px;border-radius:14px;background:var(--blu);color:#fff;font-weight:600}.stop.on{display:block}
+@media (max-width:720px){.hero .wrap{grid-template-columns:1fr}.gum{height:190px}nav a.l.h{display:none}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top">ChewWeek</a><span class="sp"></span>
+<a class="l" href="#menu">Our Menu</a><a class="l" href="#build">Build Your Box</a><a class="l h" href="#how">How It Works</a><a class="l h" href="#faq">FAQ</a>
+<button class="btn" id="open">My Box (<span id="cnt">0</span>)</button>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+<div><span class="badge">Year 2126 · First box: 18 free courses</span>
+<h1>Dinner, delivered. In three minutes.</h1>
+<p>Three-course gum on a weekly plan. Soup, main and dessert, timed around your shifts.</p>
+<a class="btn y" href="#menu">Build your box</a> <a class="btn o" href="#how">How it works</a></div>
+<div class="gum" aria-hidden="true">
+<i style="width:170px;height:170px;background:#f2b36b;left:6%;top:20px"></i>
+<i style="width:210px;height:210px;background:#e07b39;left:34%;top:70px"></i>
+<i style="width:150px;height:150px;background:#5b4fc9;right:2%;top:10px"></i>
+<i style="width:90px;height:90px;background:#d9c7a8;left:58%;top:0"></i>
+</div></div></section>
+
+<section class="sec" id="menu"><div class="wrap">
+<h2>Our Menu</h2>
+<p class="sub">Every menu is a full three-course dinner in one pack. Add menus to your box, then start tonight’s dinner.</p>
+<div class="tabs" id="tabs"></div><div class="grid" id="grid"></div>
+</div></section>
+
+<section class="sec" id="build" style="background:var(--card)"><div class="wrap">
+<h2>Build Your Box</h2>
+<p class="sub">Pick a menu for each evening of the week, or skip a night. Your box updates as you choose.</p>
+<div class="grid" id="planner"></div>
+<button class="btn y" id="review" style="margin-top:22px">Review my box</button>
+</div></section>
+
+<section class="sec" id="how"><div class="wrap">
+<h2>How It Works</h2><p class="sub">From your phone to your cheek in four steps.</p>
+<div class="steps">
+<div class="st"><div class="n">1</div><h3>Build your box</h3><p>Pick a menu for each evening. Skip any night you’re working late.</p></div>
+<div class="st"><div class="n">2</div><h3>Set the pace</h3><p>Choose a 2, 3 or 4 minute chew time that fits your break.</p></div>
+<div class="st"><div class="n">3</div><h3>Delivered by tube</h3><p>Packs arrive at 19:40 through your building’s pneumatic tube.</p></div>
+<div class="st"><div class="n">4</div><h3>Chew and enjoy</h3><p>Tap to count each chew. We switch courses for you and warn you before dessert goes too far.</p></div>
+</div></div></section>
+
+<section class="price"><div class="wrap">
+<h2 style="font-size:36px">Built for your budget</h2>
+<div class="p"><div>2<small>credits, Garden</small></div><div>2<small>credits, Classic</small></div><div>3<small>credits, Spicy Night</small></div><div>0<small>credits for the blue stain</small></div></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+<h2>What 2126 is saying</h2><p class="sub">Reviews from future customers.</p>
+<div class="rv">
+<div class="r"><h3>Classic Roast</h3><p>The potato course lasted exactly long enough for me to feel like I sat down. I did not sit down.</p><span>Mira T., night-shift engineer</span></div>
+<div class="r"><h3>Garden</h3><p>I cried a little at the mushroom steak. Nobody has grown a mushroom near me in 40 years.</p><span>Jun K., Tower 9</span></div>
+<div class="r"><h3>Spicy Night</h3><p>Dessert is serious. I ignored the STOP alert once. Never again.</p><span>Dev P., still slightly blue</span></div>
+</div></div></section>
+
+<section class="sec" id="faq" style="background:var(--card)"><div class="wrap">
+<h2 style="margin-bottom:20px">Questions</h2>
+<details><summary>How does ChewWeek work?</summary><p>You choose menus for the week. Each pack holds one gum with three flavors. The app counts your chews and moves you from soup to main to dessert.</p></details>
+<details><summary>What is the blueberry level?</summary><p>Dessert is powerful. The meter fills as you chew, and the STOP alert tells you when to spit. Past 100%, you turn blue.</p></details>
+<details><summary>Can I skip a week?</summary><p>Yes. Tap a day in your box and remove it. Dinner is still a ritual, so we won’t guilt you.</p></details>
+<details><summary>Is this a real product?</summary><p>No. It’s a speculative prototype from the IP1A course “Speculative Gastronomy.” It asks what happens to dinner when time and farmland run out.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">ChewWeek · IP1A Speculative Gastronomy prototype · 2126. Inspired by a famous fictional gum, but this is an original concept.</div></footer>
+
+<div class="ov" id="ov"><div class="pane" id="pane"></div></div>
+
+<script>
+const $=i=>document.getElementById(i);
+const CATS=["All","Greatest Hits","Quick Chew","Fresh Start","Night Shift"];
+const M=[
+{n:"Classic Roast",cat:"Greatest Hits",s:"Tomato soup",r:"Roast beef and baked potato",p:"Blueberry pie",t:3,c:2,col:["#ee5a36","#a8693f","#4c3fd1"],bg:"#ffe3d6"},
+{n:"Garden",cat:"Fresh Start",s:"Pea soup",r:"Mushroom steak",p:"Blueberry pie",t:3,c:2,col:["#2bb58a","#7a5c3a","#4c3fd1"],bg:"#d6f5e9",tag:"Vegetarian"},
+{n:"Spicy Night",cat:"Night Shift",s:"Chili broth",r:"Smoked ribs",p:"Blueberry pie",t:4,c:3,col:["#d62839","#6b3b22","#4c3fd1"],bg:"#ffd9de",tag:"Hot"},
+{n:"Sunrise Sprint",cat:"Quick Chew",s:"Carrot ginger soup",r:"Egg and toast",p:"Berry crumble",t:2,c:2,col:["#ff9f1c","#e3b448","#4c3fd1"],bg:"#fff0c9",tag:"2 min"},
+{n:"Ocean Break",cat:"Fresh Start",s:"Seaweed broth",r:"Salmon and rice",p:"Blueberry pie",t:3,c:3,col:["#1fa2c9","#e8826a","#4c3fd1"],bg:"#d8f0f8",tag:"Low carb"},
+{n:"Midnight Comfort",cat:"Night Shift",s:"Chicken noodle",r:"Mac and cheese",p:"Blueberry pie",t:4,c:3,col:["#f4b942","#e08d2b","#4c3fd1"],bg:"#fdeccb"},
+{n:"Desk Lunch",cat:"Quick Chew",s:"Miso soup",r:"Teriyaki bowl",p:"Mango bite",t:2,c:2,col:["#c98a4b","#b4432e","#ff9f1c"],bg:"#f6e3d0",tag:"2 min"},
+{n:"Family Table",cat:"Greatest Hits",s:"Pumpkin soup",r:"Roast chicken and mash",p:"Blueberry pie",t:4,c:3,col:["#f08a24","#a8693f","#4c3fd1"],bg:"#ffe8cf"}];
+const plan=Array(7).fill(null);const DAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];let cat="All";
+function boxOf(){const b={};plan.forEach(k=>{if(k!==null)b[k]=(b[k]||0)+1});return b}
+function drawPlan(){$("planner").innerHTML=DAYS.map((d,i)=>`<div class="r"><h3>${d}</h3><span>${plan[i]===null?"No dinner planned":M[plan[i]].s+" → "+M[plan[i]].p}</span><select class="dsel" data-d="${i}" aria-label="Menu for ${d}"><option value="">Skip this night</option>${M.map((m,k)=>`<option value="${k}" ${plan[i]===k?"selected":""}>${m.n}</option>`).join("")}</select></div>`).join("")}
+function tabs(){$("tabs").innerHTML=CATS.map(c=>`<button class="tab" aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join("")}
+function grid(){$("grid").innerHTML=M.map((m,i)=>({m,i})).filter(x=>cat==="All"||x.m.cat===cat).map(({m,i})=>`<article class="m"><div class="art">${m.col.map(c=>`<b style="background:${c}"></b>`).join("")}</div><div class="mb">${m.tag?`<span class="tag">${m.tag}</span>`:""}<h3>${m.n}</h3><div class="c">${m.s} → ${m.r} → ${m.p}</div><div class="f"><span>${m.t} min · ${m.c} credits</span><button class="btn" data-a="${i}">Add</button></div></div></article>`).join("")}
+$("tabs").onclick=e=>{const b=e.target.closest(".tab");if(b){cat=b.dataset.c;tabs();grid()}};
+$("grid").onclick=e=>{const b=e.target.closest("[data-a]");if(!b)return;const s=plan.indexOf(null);if(s<0){b.textContent="Week full";setTimeout(()=>b.textContent="Add",1200);return}plan[s]=+b.dataset.a;count();drawPlan();b.textContent="Added to "+DAYS[s].slice(0,3);setTimeout(()=>b.textContent="Add",1200)};
+function count(){$("cnt").textContent=plan.filter(x=>x!==null).length}
+function pane(h){$("pane").innerHTML=h;$("ov").classList.add("on")}
+function close(){$("ov").classList.remove("on")}
+$("ov").onclick=e=>{if(e.target.id==="ov")close()};
+function cart(){const box=boxOf(),ks=Object.keys(box);
+ if(!ks.length)return pane(`<h2 style="font-size:30px">Your box is empty</h2><p class="sub">Add a menu from Our Menu to start.</p><button class="btn" id="x">Browse menu</button>`),$("x").onclick=()=>{close();location.hash="menu"};
+ const tot=ks.reduce((a,k)=>a+M[k].c*box[k],0);
+ pane(`<h2 style="font-size:30px">Your box</h2><p class="sub">Delivery tonight, 19:40, by pneumatic tube.</p>${ks.map(k=>`<div class="row"><span>${M[k].n} × ${box[k]}</span><span><button class="tab" data-r="${k}">Remove</button> ${M[k].c*box[k]} cr</span></div>`).join("")}<div class="row"><b>Total</b><b>${tot} water credits</b></div><button class="btn y" id="go" style="width:100%;margin-top:16px">Confirm and start tonight’s dinner</button><button class="btn o" id="x" style="width:100%;margin-top:10px">Keep browsing</button>`);
+ $("x").onclick=close;$("go").onclick=()=>dinner(+ks[0]);
+ $("pane").querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{plan[plan.lastIndexOf(+b.dataset.r)]=null;count();drawPlan();cart()})}
+$("open").onclick=cart;
+let ci,n,tot,done;
+function dinner(i){const m=M[i];
+ const CS=[{n:"Soup",c:m.col[0],say:m.s+". Slow down.",g:12},{n:"Main",c:m.col[1],say:m.r+".",g:14},{n:"Dessert",c:m.col[2],say:m.p+". Watch the blueberry level.",g:10}];
+ ci=0;n=0;tot=0;done=false;
+ pane(`<div class="live"><div class="lb" style="justify-content:center">Tonight: ${m.n}</div><div class="cn" id="cn"></div><div class="lb" style="justify-content:center" id="sy"></div><button class="orb" id="orb" aria-label="Count a chew">0</button><div class="lb"><span>Course progress</span><span id="pc"></span></div><div class="bar"><i id="pb"></i></div><div id="bw" style="display:none"><div class="lb"><span>Blueberry level</span><span id="bl">0%</span></div><div class="bar"><i id="bb" style="background:#4c3fd1"></i></div></div><div class="stop" id="stop">STOP chewing. Spit now, or you will turn blue.</div></div>`);
+ const paint=()=>{const c=CS[ci];$("cn").textContent=c.n;$("cn").style.color=c.c;$("sy").textContent=c.say;$("orb").style.background=c.c;$("orb").textContent=tot;$("pb").style.background=c.c;$("pb").style.width=Math.min(100,n/c.g*100)+"%";$("pc").textContent=n+" / "+c.g;$("bw").style.display=ci===2?"block":"none"};
+ paint();
+ $("orb").onclick=()=>{if(done)return;const c=CS[ci];n++;tot++;try{navigator.vibrate&&navigator.vibrate(30)}catch(e){}
+  if(ci===2){const p=Math.min(100,Math.round(n/c.g*100));paint();$("bb").style.width=p+"%";$("bl").textContent=p+"%";if(p>=70)$("stop").classList.add("on");
+   if(n>=c.g){done=true;try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}setTimeout(end,1600)}}
+  else if(n>=c.g){ci++;n=0;try{navigator.vibrate&&navigator.vibrate(120)}catch(e){}paint()}else paint()}}
+function end(){pane(`<h2 style="font-size:38px;margin-top:10px">Dinner complete. 3 courses, 3 minutes.</h2><p class="sub">Tonight you saved 44 minutes. Your table stayed empty.</p><h3 style="font-size:26px">We saved the time. Did we keep the dinner?</h3><button class="btn" id="x" style="width:100%;margin-top:20px">Back to the menu</button>`);$("x").onclick=close}
+$("planner").onchange=e=>{const s=e.target.closest("select");if(!s)return;plan[+s.dataset.d]=s.value===""?null:+s.value;count();drawPlan()};
+$("review").onclick=cart;
+tabs();grid();drawPlan();
+</script></body></html>
